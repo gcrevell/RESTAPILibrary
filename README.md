@@ -1,6 +1,7 @@
 # RESTAPILibrary
 
 [![CI Status](http://img.shields.io/travis/gcrevell/RESTAPILibrary.svg?style=flat)](https://travis-ci.org/gcrevell/RESTAPILibrary)
+<!--
 [![Version](https://img.shields.io/cocoapods/v/RESTAPILibrary.svg?style=flat)](http://cocoapods.org/pods/RESTAPILibrary)
 [![License](https://img.shields.io/cocoapods/l/RESTAPILibrary.svg?style=flat)](http://cocoapods.org/pods/RESTAPILibrary)
 [![Platform](https://img.shields.io/cocoapods/p/RESTAPILibrary.svg?style=flat)](http://cocoapods.org/pods/RESTAPILibrary)
@@ -19,6 +20,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'RESTAPILibrary'
 ```
+-->
 
 ## Author
 
