@@ -12,7 +12,7 @@ internal class NetworkActivityHelper {
     // This is a static-only class. No instances should be created. Ever
     @available(*, unavailable) fileprivate init() {}
 
-    static fileprivate var activityIndicatorCount = 0
+    static internal private(set) var activityIndicatorCount = 0
 
     static internal func showNetworkActivity() {
         DispatchQueue.main.async {
