@@ -1,0 +1,6 @@
+use_frameworks!
+target 'RESTAPILibrary_Tests' do
+  pod 'RESTAPILibrary', :path => '../'
+  
+  
+end
