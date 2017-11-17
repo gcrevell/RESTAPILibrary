@@ -33,4 +33,11 @@ internal class NetworkActivityHelper {
         }
     }
 
+    static internal func reset() {
+        DispatchQueue.main.async {
+            NetworkActivityHelper.activityIndicatorCount = 0
+            NetworkActivityHelper.hideNetworkActivity()
+        }
+    }
+
 }
