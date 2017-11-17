@@ -33,11 +33,12 @@ internal class NetworkActivityHelper {
         }
     }
 
+    /**
+     A reset method to force clearing the network activity indicator. **This
+     should never be called.** It is for unit testing only.
+    */
     static internal func reset() {
-        DispatchQueue.main.async {
-            NetworkActivityHelper.activityIndicatorCount = 0
-            NetworkActivityHelper.hideNetworkActivity()
-        }
+        NetworkActivityHelper.activityIndicatorCount = 0
     }
 
 }
