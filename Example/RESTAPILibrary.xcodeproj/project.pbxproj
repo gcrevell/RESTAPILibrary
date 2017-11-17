@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002057C61FBF5DAF005163BF /* NetworkActivityHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002057C51FBF5DAF005163BF /* NetworkActivityHelperTests.swift */; };
 		4B7202EA99A264BEFBF685FF /* Pods_RESTAPILibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256090BFE568B639DB06E511 /* Pods_RESTAPILibrary_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002057C51FBF5DAF005163BF /* NetworkActivityHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkActivityHelperTests.swift; sourceTree = "<group>"; };
 		256090BFE568B639DB06E511 /* Pods_RESTAPILibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RESTAPILibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* RESTAPILibrary_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RESTAPILibrary_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7A9E8EF31CCB187D08C98BBB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		92D5C4530D6C789D2D792A64 /* RESTAPILibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RESTAPILibrary.podspec; path = ../RESTAPILibrary.podspec; sourceTree = "<group>"; };
+		7A9E8EF31CCB187D08C98BBB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		92D5C4530D6C789D2D792A64 /* RESTAPILibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RESTAPILibrary.podspec; path = ../RESTAPILibrary.podspec; sourceTree = "<group>"; };
 		D16E4E7CA35B90C481E430F0 /* Pods-RESTAPILibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RESTAPILibrary_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RESTAPILibrary_Tests/Pods-RESTAPILibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7ABA447C9AA0627BC362C42 /* Pods-RESTAPILibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RESTAPILibrary_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RESTAPILibrary_Tests/Pods-RESTAPILibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F0423F62DB8838CD5D435B46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F0423F62DB8838CD5D435B46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				002057C51FBF5DAF005163BF /* NetworkActivityHelperTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -131,10 +134,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -229,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002057C61FBF5DAF005163BF /* NetworkActivityHelperTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
