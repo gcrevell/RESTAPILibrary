@@ -35,3 +35,43 @@ public extension URLSession {
     }
 
 }
+
+/**
+ Class to act as the delegate of a URLSession download task.
+
+ When downloading data from a url request, the progress block should be updated
+ by this delegate.
+ */
+private class DownloadProgressHandler: NSObject, URLSessionDownloadDelegate {
+
+    /**
+     The block to call when the progress is updated.
+    */
+    fileprivate let update: (Double) -> Void
+
+    /**
+     Create a new progress handler with an update block
+    */
+    init(onUpdate: @escaping (Double) -> Void) {
+        self.update = onUpdate
+    }
+
+    func urlSession(_ session:                  URLSession,
+                    downloadTask:               URLSessionDownloadTask,
+                    didWriteData bytesWritten:  Int64,
+                    totalBytesWritten:          Int64,
+                    totalBytesExpectedToWrite:  Int64) {
+        // Update the progress
+        let progress = Double(totalBytesWritten) / Double(totalBytesExpectedToWrite)
+
+        self.update(progress)
+    }
+
+    func urlSession(_ session:                          URLSession,
+                    downloadTask:                       URLSessionDownloadTask,
+                    didFinishDownloadingTo location:    URL) {
+        // This is a no-op, and instead is handled by the block passed when
+        // creating the data task.
+    }
+
+}
