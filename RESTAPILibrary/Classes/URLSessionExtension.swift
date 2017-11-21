@@ -34,6 +34,23 @@ public extension URLSession {
         dataTask.resume()
     }
 
+    public static func submit(_ request:    URLRequest,
+                              progress:     @escaping (Double) -> Void = { _ in },
+                              completion:   @escaping (URL?, URLResponse?, Error?) -> Void) {
+
+        let session = URLSession(configuration: .default,
+                                 delegate:      DownloadProgressHandler(onUpdate: progress),
+                                 delegateQueue: nil)
+
+        let downloadTask = session.downloadTask(with: request) { (url, response, error) in
+            NetworkActivityHelper.hideNetworkActivity()
+            completion(url, response, error)
+        }
+
+        NetworkActivityHelper.showNetworkActivity()
+        downloadTask.resume()
+    }
+
 }
 
 /**
