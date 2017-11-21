@@ -5,6 +5,8 @@ language: swift
 before_install:
   - gem install cocoapods # Since Travis is not always on latest version
   - pod install --project-directory=Example
+  - brew install swiftlint
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/RESTAPILibrary.xcworkspace -scheme RESTAPILibrary-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- swiftlint
 - pod lib lint
