@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RESTAPILibrary'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RESTAPILibrary.'
+  s.summary          = 'A library to access REST API endpoints.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
