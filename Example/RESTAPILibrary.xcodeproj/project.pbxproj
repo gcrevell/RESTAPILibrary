@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		002057C61FBF5DAF005163BF /* NetworkActivityHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002057C51FBF5DAF005163BF /* NetworkActivityHelperTests.swift */; };
+		0039898C1FC4D56300E1702A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0039898B1FC4D56300E1702A /* .swiftlint.yml */; };
 		4B7202EA99A264BEFBF685FF /* Pods_RESTAPILibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256090BFE568B639DB06E511 /* Pods_RESTAPILibrary_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		002057C51FBF5DAF005163BF /* NetworkActivityHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkActivityHelperTests.swift; sourceTree = "<group>"; };
+		0039898B1FC4D56300E1702A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
 		256090BFE568B639DB06E511 /* Pods_RESTAPILibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RESTAPILibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* RESTAPILibrary_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RESTAPILibrary_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				92D5C4530D6C789D2D792A64 /* RESTAPILibrary.podspec */,
 				7A9E8EF31CCB187D08C98BBB /* README.md */,
 				F0423F62DB8838CD5D435B46 /* LICENSE */,
+				0039898B1FC4D56300E1702A /* .swiftlint.yml */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0039898C1FC4D56300E1702A /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
