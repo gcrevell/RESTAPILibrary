@@ -7,6 +7,6 @@ before_install:
   - pod install --project-directory=Example
   - brew install swiftlint
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/RESTAPILibrary.xcworkspace -scheme RESTAPILibrary-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- xcodebuild test -enableCodeCoverage YES -workspace Example/RESTAPILibrary.xcworkspace -scheme RESTAPILibrary-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=latest' | xcpretty
 - swiftlint
 - pod lib lint
